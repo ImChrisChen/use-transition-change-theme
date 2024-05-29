@@ -1,0 +1,40 @@
+{
+  "name": "@imccc/use-transition-change-theme",
+  "version": "1.0.0",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -w -c",
+    "build": "rollup -c"
+  },
+  "exports": {
+    ".": {
+      "types": [
+        "./dist/index.d.ts"
+      ],
+      "require": ["./dist/index.cjs"],
+      "import": ["./dist/index.mjs"]
+    }
+  },
+  "type": "module",
+  "keywords": [
+    "theme",
+    "theme-transition",
+    "toggle-theme"
+  ],
+  "author": "imchrisorz@gmail.com",
+  "repository": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "rollup": "^4.18.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-vue": "^6.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.27",
+    "typescript": "^5.4.5"
+  }
+}
