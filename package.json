@@ -24,9 +24,9 @@
     "toggle-theme"
   ],
   "author": "imchrisorz@gmail.com",
-  "repository": "",
-  "license": "ISC",
-  "description": "",
+  "repository": "https://github.com/ImChrisChen/use-transition-change-theme",
+  "license": "MIT",
+  "description": "A hook function for switching themes",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.8",
     "rollup": "^4.18.0",
