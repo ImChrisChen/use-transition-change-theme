@@ -1,5 +1,6 @@
 {
   "name": "@imccc/use-transition-change-theme",
+  "private": false,
   "version": "1.0.0",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
