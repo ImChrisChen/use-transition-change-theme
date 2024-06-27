@@ -14,8 +14,12 @@
       "types": [
         "./dist/index.d.ts"
       ],
-      "require": ["./dist/index.cjs"],
-      "import": ["./dist/index.mjs"]
+      "require": [
+        "./dist/index.cjs"
+      ],
+      "import": [
+        "./dist/index.mjs"
+      ]
     }
   },
   "type": "module",
@@ -37,5 +41,10 @@
   },
   "peerDependencies": {
     "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "@types/react": "^18.3.3",
+    "dist": "link:/Users/chrisorz/Workspaces/use-transition-change-theme/dist",
+    "react": "^18.3.1"
   }
 }
