@@ -2,7 +2,7 @@ import type { Ref } from 'vue'
 import { nextTick, onMounted } from 'vue'
 import { ToggleThemeOptions } from "../interfaces";
 
-export function useTransitionThemeVue(isDark: Ref<boolean>, setIsDark: (isDark: boolean) => void, isAutoChangeTheme = true) {
+export function useTransitionTheme(isDark: Ref<boolean>, setIsDark: (isDark: boolean) => void, isAutoChangeTheme = true) {
   onMounted(() => {
     if (!isAutoChangeTheme)
       return
