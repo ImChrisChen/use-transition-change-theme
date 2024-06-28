@@ -1,4 +1,4 @@
-# ThemeTransition.js
+# use-transition-change-theme
 
 A lightweight and flexible library for smooth theme transitions in your web applications.
 
@@ -38,7 +38,7 @@ pnpm install use-transition-change-theme
 
 ## Usage
 
-Here’s a basic example of how to use `ThemeTransition.js`:
+Here’s a basic example of how to use `use-transition-change-theme`:
 
 ```javascript
 import {useTransitionChangeTheme} from '@imccc/use-transition-change-theme'
