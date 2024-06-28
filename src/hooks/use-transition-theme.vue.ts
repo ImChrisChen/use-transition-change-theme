@@ -2,7 +2,7 @@ import type { Ref } from 'vue'
 import { nextTick, onMounted } from 'vue'
 import { ToggleThemeOptions } from "../interfaces";
 
-export function useTransitionTheme(isDark: Ref<boolean>, setIsDark: (isDark: boolean) => void, isAutoChangeTheme = true) {
+export function useTransitionChangeTheme(isDark: Ref<boolean>, setIsDark: (isDark: boolean) => void, isAutoChangeTheme = true) {
   onMounted(() => {
     if (!isAutoChangeTheme)
       return
@@ -12,6 +12,9 @@ export function useTransitionTheme(isDark: Ref<boolean>, setIsDark: (isDark: boo
       const dark = e.matches
       setIsDark(dark)
     })
+
+    // 初始化跟随系统
+    setIsDark(mediaQuery.matches)
   })
 
   function updateView(options: ToggleThemeOptions) {
@@ -26,7 +29,7 @@ export function useTransitionTheme(isDark: Ref<boolean>, setIsDark: (isDark: boo
       animation: 'ease-in',
     }
 
-    const opts = { ...defaultOptions, ...options } as Required<ToggleThemeOptions>
+    const opts = {...defaultOptions, ...options} as Required<ToggleThemeOptions>
 
     // 在不支持的浏览器里不做动画
     if (!document.startViewTransition) {
