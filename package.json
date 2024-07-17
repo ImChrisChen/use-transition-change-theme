@@ -44,7 +44,6 @@
   },
   "dependencies": {
     "@types/react": "^18.3.3",
-    "dist": "link:/Users/chrisorz/Workspaces/use-transition-change-theme/dist",
     "react": "^18.3.1"
   }
 }

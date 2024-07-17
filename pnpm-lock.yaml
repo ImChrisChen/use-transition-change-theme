@@ -11,9 +11,6 @@ importers:
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.3
-      dist:
-        specifier: link:/Users/chrisorz/Workspaces/use-transition-change-theme/dist
-        version: link:dist
       react:
         specifier: ^18.3.1
         version: 18.3.1
